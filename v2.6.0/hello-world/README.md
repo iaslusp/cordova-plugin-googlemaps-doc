@@ -36,10 +36,12 @@ Saved plugin info for "cordova-plugin-googlemaps" to config.xml
 ## Step 3: Edit `config.xml`
 
 Open the file `config.xml` with your text editor, and write preferences like this.
+iOS deployment target must be 9.0 and higher.
 
 ```xml
 <widget ...>
   ...
+  <preference name="deployment-target" value="9.0"/>
   <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="(api key)" />
   <preference name="GOOGLE_MAPS_IOS_API_KEY" value="(api key)" />
   ...
